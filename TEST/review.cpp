@@ -15,7 +15,8 @@ int main() {
 	cout << L1.length << '\t' << sizeof(L1.data) << endl;*/
 	//Seq *List;
 	Node* Shit = iniation();
-	insert_C(Shit, 45);
+	insert_CHead(Shit, 45);
+	insert_CTail(Shit, 67);
 	show_C(Shit);
 
 	
