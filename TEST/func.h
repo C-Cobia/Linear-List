@@ -132,5 +132,22 @@ void show_C(Node* L) {
 		p = p->next;
 	}
 }
+Node* getTail(Node*L) {
+	Node* p = (Node*)malloc(sizeof(Node));
+	p = L->next;
+	while (p != NULL) {
+		cout << p->data << endl;
+		p = p->next;
+	}
+	return p;
+}
+void insert_CTail(Node* L, Element e) {
+	Node* M= getTail(L);
+	Node* p = (Node*)malloc(sizeof(Node));
+	p->data = e;
+	p->next = NULL;
+	M->next = p;
+	free(p);
+}
 
 
